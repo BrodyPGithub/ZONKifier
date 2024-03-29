@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            #square {
-                width: 100px;
-                height: 200px;
-                background: rgb(252, 250, 138);
-            }
-        </style>
-    </head>
-    <body>
-        <p>Hello, World!</p>
-        <div id="squares">
-            <div id="square" class="square1"></div>
-            <div id="square" class="square2"></div>
-            <div id="square" class="square3"></div>
-            <div id="square" class="square4"></div>
-            </br>
-            <div id="square" class="square5"></div>
-            <div id="square" class="square6"></div>
-            <div id="square" class="square7"></div>
-            <div id="square" class="square8"></div>
-            </br>
-            <div id="square" class="square9"></div>
-            <div id="square" class="square10"></div>
-            <div id="square" class="square11"></div>
-            <div id="square" class="square12"></div>
-            </br>
-            <div id="square" class="square13"></div>
-            <div id="square" class="square14"></div>
-            <div id="square" class="square15"></div>
-            <div id="square" class="square16"></div>
-            </br>
+  <head>
+      <style>
+          .square {
+            width: 100px;
+            height: 120px;
+            background-color: #ffff61;
+            float: left;
+            font-size: 40px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            text-align: center;
+        }
+          #panel {
+              background-color: brown;
+              margin-bottom: 10px;
+              width: 177px;
+              color: aliceblue;
+          }
+          .button {
+              border: 0px;
+              margin-right: 0px;
+              background: 0px;
+              font-size: 40px;
+          }
+          #squares {
+              height: 500px;
+              width: 420px;
+          }
+      </style>
+      <script src="index.js"></script>
+  </head>
+  <body>
+      <button class="collapsible">Toggle Panel</button>
+        <div id="panel" class="panel">
+          <p>ZONK Panel</p>
+          <p>ZONKs</p>
+          <input type="text" id="zonks">
+          <p>Amount o. 100</p>
+          <input type="text" id="nI">
+          <p>Amount o. 200</p>
+          <input type="text" id="nII">
+          <p>Amount o. 300</p>
+          <input type="text" id="nIII">
+          <p>Amount o. 400</p>
+          <input type="text" id="nIV">
+          <p>Amount o. 500</p>
+          <input type="text" id="nV">
+          <button onclick="generateBoard();">Generate Board</button>
         </div>
-    </body>
+      <div id="squares">
+        <div id="square1" class="square" onclick="clickButton(1);"><p>1</p></div>
+          <div id="square2" class="square" onclick="clickButton(2);"><p>2</p></div>
+          <div id="square3" class="square" onclick="clickButton(3);"><p>3</p></div>
+          <div id="square4" class="square" onclick="clickButton(4);"><p>4</p></div>
+          <div id="square5" class="square" onclick="clickButton(5);"><p>5</p></div>
+          <div id="square6" class="square" onclick="clickButton(6);"><p>6</p></div>
+          <div id="square7" class="square" onclick="clickButton(7);"><p>7</p></div>
+          <div id="square8" class="square" onclick="clickButton(8);"><p>8</p></div>
+          <div id="square9" class="square" onclick="clickButton(9);"><p>9</p></div>
+          <div id="square10" class="square" onclick="clickButton(10);"><p>10</p></div>
+          <div id="square11" class="square" onclick="clickButton(11);"><p>11</p></div>
+          <div id="square12" class="square" onclick="clickButton(12);"><p>12</p></div>
+          <div id="square13" class="square" onclick="clickButton(13);"><p>13</p></div>
+          <div id="square14" class="square" onclick="clickButton(14);"><p>14</p></div>
+          <div id="square15" class="square" onclick="clickButton(15);"><p>15</p></div>
+          <div id="square16" class="square" onclick="clickButton(16);"><p>16</p></div>
+      </div>
+  </body>
 </html>
